@@ -25,3 +25,33 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+@keyframes loading {
+  from {
+    scale: 1;
+    transform: rotate(0deg);
+  }
+  to {
+    scale: 3;
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes view {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.loading-animate {
+  animation: loading 3s ease-in-out;
+}
+
+.view-animate {
+  animation: view 3s ease-in-out;
+}
